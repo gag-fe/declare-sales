@@ -1,0 +1,23 @@
+<div class="row">
+    <ul class="nav nav-sidebar">
+        <!--<li ng-class="{ active  : isActive('/')}"><a href="#/"><i class="icon-home"></i><span>Dashboard</span></a></li>-->
+        <li class="nav-parent" ng-if='misMenu["6005"]'>
+            <a href=""><i class="icon-screen-desktop"></i><span>电子详单</span><span class="fa arrow"></span></a>
+            <ul class="children collapse">
+                <li ng-if='misMenu["600501"]' ng-class="{ active  : isActive('/list-config')}"><a href="#list-config"> 详单配置</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="copyright">
+        <p class="pull-left sm-pull-reset">
+            <span>Copyright <span class="copyright">&copy;</span> {{copyright}} </span>
+            <span>THEMES LAB</span>.
+            <span>All rights reserved. </span>
+        </p>
+        <p class="pull-right sm-pull-reset">
+            <span><a href="#" class="m-r-10">Support</a> | <a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+        </p>
+    </div>
+</div>
